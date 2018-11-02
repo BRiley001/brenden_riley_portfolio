@@ -11,48 +11,6 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
-    background-image: url('https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350');
-
-}
-
-body {
-    color: black;
-}
-
-aside#main {
-    background-color: ivory;
-}
-
-body>header {
-    margin-top: 0%;
-    font-size: 3em;
-    text-align: center;
-}
-
-
-body>nav {
-    float: left;
-    margin: 0% 0% 0% 10%;
-    padding: 10px 10px 90% 10px;
-    background-color: darkgray;
-    border: 1px;
-    border-color: black;
-}
-
-body>nav>a {
-    text-decoration: none;
-    color: black;
-}
-
-body>nav>a:hover,
-body>nav>a:active {
-    background-color: rgb(20, 20, 20)
-}
-
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
