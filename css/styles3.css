@@ -95,3 +95,49 @@ h1 {
     text-align: center;
     font-size: 3em;
 }
+
+p {
+    display: block;
+    font-size: 3em;
+    text-align: center;
+}
+
+p#bar1 {
+    height: 80px;
+    width: 60%;
+    background-color: red;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+p#bar2 {
+    height: 80px;
+    width: 80%;
+    background-color: orange;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+p#bar3 {
+    height: 80px;
+    width: 70%;
+    background-color: yellow;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+p#bar4 {
+    height: 80px;
+    width: 85%;
+    background-color: green;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+p#bar5 {
+    height: 80px;
+    width: 65%;
+    background-color: blue;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}

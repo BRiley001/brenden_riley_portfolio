@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+/* 
+
+Author: Brenden Riley
+Date: 
+
+Filename: styles1.css
+ */
+
+header>h1 {
+    text-align: center;
+    font-size: 2.7em;
+}
+
+html {
+    background-image: url(background.jpeg);
+    height: 100%;
+    width: 100%;
+    background-repeat: round;
+    background-attachment: fixed;
+}
+
+body {
+    width: 90%;
+    min-width: 720px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(227, 228, 228, 0.9);
+}
+
+nav {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav a {
+    width: 19.4%;
+    margin-left: auto;
+    margin-left: auto;
+    background-color: rgba(73, 73, 73, 0.95);
+    display: inline-block;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:link,
+nav a:visited {}
+
+nav a:hover,
+nav a:active {
+    background-color: rgb(80, 80, 158);
+    transition: .5s ease;
+}
+
+h2 {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
