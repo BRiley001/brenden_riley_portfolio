@@ -37,13 +37,13 @@ nav a {
     width: 19.4%;
     margin-left: auto;
     margin-left: auto;
-    background-color: rgba(73, 73, 73, 0.95);
     display: inline-block;
     text-align: center;
     padding-top: 5px;
     padding-bottom: 5px;
     text-decoration: none;
     color: white;
+    background: linear-gradient(345deg, rgba(43, 45, 148, 0.74), rgba(67, 67, 100, 0.726) 80%);
 }
 
 nav a:link,
@@ -73,8 +73,6 @@ section#edugrid h2 {
 section#edusec1 {
     grid-column: 2 / 4;
     grid-row: 1 / 2;
-    background-image: url(cogwheel2.png);
-    background-size: 100%;
     border: 1px solid black;
     border-radius: 145px;
 }
