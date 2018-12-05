@@ -28,7 +28,7 @@ header>h1 {
 }
 
 nav#horizontal {
-    width: 95%; 
+    width: 95%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -53,8 +53,6 @@ nav#horizontal ul a:active {
     transition: .5s ease;
 }
 
-
-
 section#edugrid h2 {
     text-align: center;
     text-decoration: underline;
@@ -77,14 +75,14 @@ p {
 ul {
     list-style: none;
     padding-left: 0px;
-}
-a#navicon {
-    display:none;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 img {
     display: block;
 }
+
 /* 
 ========================
 Mobile Styles (0-480 px)
@@ -94,19 +92,6 @@ Mobile Styles (0-480 px)
     .edusec {
         margin-left: auto;
         margin-right: auto;
-        display: block;
-    }
-
-    a#navicon {
-        display: block;
-    }
-
-    nav.horizontal ul {
-        display: none;
-    }
-
-    a#navicon:hover+ul,
-    nav.horizontal ul:hover {
         display: block;
     }
 
@@ -125,6 +110,25 @@ Mobile&Tablet Styles
         margin-right: auto;
         padding-left: 42%;
     }
+
+    a#navicon img {
+        width: 50%;
+    }
+
+    a#navicon {
+        display: block;
+        width: 10%;
+    }
+
+    nav.horizontal ul {
+        display: none;
+    }
+
+    a#navicon:hover+ul,
+    nav.horizontal ul:hover {
+        display: block;
+    }
+
 }
 
 /* 
@@ -141,26 +145,26 @@ Tablet&Desktop Styles (481+ pixels)
         margin-right: auto;
         margin-top: 5%;
     }
-    
+
     section#edusec1 {
-    grid-column: 2 / 4;
-    grid-row: 1 / 2;
-}
+        grid-column: 2 / 4;
+        grid-row: 1 / 2;
+    }
 
     section#edusec2 {
-    grid-column: 4 / 6;
-    grid-row: 1 / 2;
-}
+        grid-column: 4 / 6;
+        grid-row: 1 / 2;
+    }
 
     section#edusec3 {
-    grid-column: 2 / 4;
-    grid-row: 2 / 3;
-}
+        grid-column: 2 / 4;
+        grid-row: 2 / 3;
+    }
 
     section#edusec4 {
-    grid-column: 4 / 6;
-    grid-row: 2 / 3;
-}
+        grid-column: 4 / 6;
+        grid-row: 2 / 3;
+    }
 
 }
 
@@ -179,10 +183,12 @@ Desktop Styles (769+px)
         width: 65%;
     }
 
-
     nav#horizontal ul a {
         width: 19.4%;
         display: inline-block;
+    }
 
+    a#navicon {
+        display: none;
     }
 }
