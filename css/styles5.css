@@ -51,8 +51,8 @@ nav#horizontal ul a {
 nav a:link,
 nav a:visited {}
 
-nav a:hover,
-nav a:active {
+nav#horizontal ul a:hover,
+nav#horizontal ul a:active {
     background-color: rgb(80, 80, 158);
     transition: .5s ease;
 }
