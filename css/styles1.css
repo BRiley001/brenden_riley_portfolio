@@ -68,31 +68,112 @@ img {
 }
 
 img#profpic {
-    width: 45%;
-    float:left;
+    display: flex;
+    flex: 1 1 480px;
+    float: left;
+    width: 50%;
+    height: 33.5vw;
 }
 
 img#skillpic {
-    width: 45%;
-    float:right;
+    display: flex;
+    flex: 1 1 480px;
+    float: right;
+    width: 50%;
+    height: 33.5vw;
 }
 
 img#book {
-    width: 45%;
-    float:left;
-    clear:left;
+    display: flex;
+    flex: 1 1 480px;
+    float: left;
+    clear: left;
+    width: 50%;
+    height: 33.5vw;
 }
 
 img#mail {
-    width: 45%;
-    float:right;
-    clear:right;
+    display: flex;
+    flex: 1 1 480px;
+    float: right;
+    clear: right;
+    width: 50%;
+    height: 33.5vw;
+}
+
+img#profpic:hover,
+img#profpic:active {
+    filter: sepia(.8);
+    transition: 5s ease;
+}
+
+img#skillpic:hover,
+img#skillpic:active {
+    filter: sepia(.8);
+    transition: 5s ease;
+}
+
+img#book:hover,
+img#book:active {
+    filter: sepia(.8);
+    transition: 2s ease;
+}
+
+img#mail:hover,
+img#mail:active {
+    filter: sepia(.8);
+    transition: 2s ease;
+}
+
+li#navpic1 {
+    width: 50%;
+}
+
+li#navpic2 {
+    width: 50%;
+}
+
+li#navpic3 {
+    width: 50%;
+}
+
+li#navpic4 {
+    width: 50%;
+}
+
+p#text1 {
+    float: left;
+    position: absolute;
+    top: 45%;
+    left: 30vw;
+    color: white;
+    font-size: 2em;
+}
+
+p#text2 {
+    float: left;
+    position: absolute;
+}
+
+p#text3 {
+    float: left;
+    position: absolute;
+}
+
+p#text4 {
+    float: left;
+    position: absolute;
+}
+
+ul#picnav {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 ul#picnav:after {
     content: "";
-    display: table; 
-    clear: both; 
+    display: table;
+    clear: both;
     background: white;
 }
 
