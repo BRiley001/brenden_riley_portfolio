@@ -3,7 +3,7 @@
 /* 
 
 Author: Brenden Riley
-Date: 
+Date: 11.16.18
 
 Filename: styles1.css
  */
@@ -68,7 +68,18 @@ img {
 }
 
 img#book {
-    transform: scale(.5, .5);
+    width: 45%;
+}
+
+img#profpic {
+    width: 45%;
+}
+
+li {
+    display: inline;
+    width: 90%;
+    margin: 20px auto;
+    list-style: none;
 }
 
 /* 
