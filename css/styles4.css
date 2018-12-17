@@ -47,9 +47,6 @@ nav#horizontal ul a {
     background: linear-gradient(345deg, rgba(43, 45, 148, 0.74), rgba(67, 67, 100, 0.726) 80%);
 }
 
-nav#horizontal ul a:link,
-nav#horizontal ul a:visited {}
-
 nav#horizontal ul a:hover,
 nav#horizontal ul a:active {
     background-color: rgb(80, 80, 158);

@@ -8,6 +8,9 @@ Date: 11.16.18
 Filename: styles5.css
  */
 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+
 header>h1 {
     text-align: center;
     font-size: 2.7em;
@@ -48,9 +51,6 @@ nav#horizontal ul a {
     background: linear-gradient(345deg, rgba(43, 45, 148, 0.74), rgba(67, 67, 100, 0.726) 80%);
 }
 
-nav a:link,
-nav a:visited {}
-
 nav#horizontal ul a:hover,
 nav#horizontal ul a:active {
     background-color: rgb(80, 80, 158);
@@ -81,6 +81,7 @@ ul {
     padding-left: 0px;
     margin-top: 0px;
     margin-bottom: 0px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 img {

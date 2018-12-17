@@ -8,6 +8,9 @@ Date: 11.16.18
 Filename: styles1.css
  */
 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+
 header>h1 {
     text-align: center;
     font-size: 2.7em;
@@ -29,9 +32,6 @@ body {
     margin-right: auto;
     background-color: rgba(227, 228, 228, 0.9);
 }
-
-nav a:link,
-nav a:visited {}
 
 img {
     display: block;
@@ -160,6 +160,10 @@ li {
     width: 90%;
     margin: 20px auto;
     list-style: none;
+}
+
+article {
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* 
@@ -410,7 +414,7 @@ Desktop Styles (950+px)
 
     p#text2 {
         top: -60vw;
-        left: 39vw;
+        left: 37vw;
         font-size: 4em;
     }
 
