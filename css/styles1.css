@@ -30,38 +30,8 @@ body {
     background-color: rgba(227, 228, 228, 0.9);
 }
 
-nav#horizontal {
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-
-nav#horizontal ul a {
-    display: inline-block;
-    text-align: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    text-decoration: none;
-    color: white;
-    background: linear-gradient(345deg, rgba(43, 45, 148, 0.74), rgba(67, 67, 100, 0.726) 80%);
-}
-
 nav a:link,
 nav a:visited {}
-
-nav#horizontal ul a:hover,
-nav#horizontal ul a:active {
-    background-color: rgb(80, 80, 158);
-    transition: .5s ease;
-}
-
-ul#nav {
-    list-style: none;
-    padding-left: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
 
 img {
     display: block;
@@ -143,26 +113,34 @@ li#navpic4 {
 
 p#text1 {
     float: left;
-    position: absolute;
-    top: 45%;
-    left: 30vw;
+    position: relative;
     color: white;
-    font-size: 2em;
+    font-size: 3em;
+    text-shadow: 5px 2px 25px black;
 }
 
 p#text2 {
     float: left;
-    position: absolute;
+    position: relative;
+    color: white;
+    font-size: 3em;
+    text-shadow: 5px 2px 25px black;
 }
 
 p#text3 {
     float: left;
-    position: absolute;
+    position: relative;
+    color: white;
+    font-size: 3em;
+    text-shadow: 5px 2px 25px black;
 }
 
 p#text4 {
     float: left;
-    position: absolute;
+    position: relative;
+    color: white;
+    font-size: 3em;
+    text-shadow: 5px 2px 25px black;
 }
 
 ul#picnav {
@@ -215,6 +193,134 @@ Mobile&Tablet Styles
     nav.horizontal ul:hover {
         display: block;
     }
+
+
+}
+
+/* 
+=======================
+Mobile styles (<480px)
+=======================
+*/
+@media only screen and (max-width: 480px) {
+
+    p#text1 {
+        top: -62vw;
+        left: 18vw;
+        font-size: 1.5em;
+    }
+
+    p#text2 {
+        top: -60vw;
+        left: 45vw;
+        font-size: 1.5em;
+    }
+
+    p#text3 {
+        top: -30vw;
+        left: -15vw;
+        font-size: 1.5em;
+    }
+
+    p#text4 {
+        top: -30vw;
+        left: 5vw;
+        font-size: 1.5em;
+    }
+}
+
+/* 
+============================
+Tablet Styles 1 (480px-550px)
+============================
+*/
+@media only screen and (min-width: 480px) and (max-width: 550px) {
+    p#text1 {
+        top: -60vw;
+        left: 15vw;
+        font-size: 2em;
+    }
+
+    p#text2 {
+        top: -60vw;
+        left: 40vw;
+        font-size: 2em;
+    }
+
+    p#text3 {
+        top: -30vw;
+        left: -18vw;
+        font-size: 2em;
+    }
+
+    p#text4 {
+        top: -30vw;
+        left: 2vw;
+        font-size: 2em;
+    }
+}
+
+/* 
+============================
+Tablet Styles 2 (550px-768px)
+============================
+*/
+
+@media only screen and (min-width: 550px) and (max-width: 650px) {
+    p#text1 {
+        top: -60vw;
+        left: 15vw;
+        font-size: 2em;
+    }
+
+    p#text2 {
+        top: -60vw;
+        left: 45vw;
+        font-size: 2em;
+    }
+
+    p#text3 {
+        top: -30vw;
+        left: -13vw;
+        font-size: 2em;
+    }
+
+    p#text4 {
+        top: -30vw;
+        left: 12vw;
+        font-size: 2em;
+    }
+}
+
+/* 
+============================
+Tablet Styles 3 (550px-768px)
+============================
+*/
+@media only screen and (min-width: 650px) and (max-width: 750px) {
+    p#text1 {
+        top: -60vw;
+        left: 15vw;
+        font-size: 2.5em;
+    }
+
+    p#text2 {
+        top: -60vw;
+        left: 45vw;
+        font-size: 2.5em;
+    }
+
+    p#text3 {
+        top: -30vw;
+        left: -18vw;
+        font-size: 2.5em;
+    }
+
+    p#text4 {
+        top: -30vw;
+        left: 5vw;
+        font-size: 2.5em;
+    }
 }
 
 /* 
@@ -222,7 +328,7 @@ Mobile&Tablet Styles
 Desktop Styles (769+px)
 =======================
 */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 850px) {
     nav#horizontal ul a {
         width: 19.4%;
         display: inline-block;
@@ -230,5 +336,93 @@ Desktop Styles (769+px)
 
     a#navicon {
         display: none;
+    }
+
+    p#text1 {
+        top: -60vw;
+        left: 13vw;
+        font-size: 3em;
+    }
+
+    p#text2 {
+        top: -60vw;
+        left: 43vw;
+        font-size: 3em;
+    }
+
+    p#text3 {
+        top: -25vw;
+        left: -16vw;
+        font-size: 3em;
+    }
+
+    p#text4 {
+        top: -25vw;
+        left: 2vw;
+        font-size: 3em;
+    }
+}
+
+/* 
+=======================
+Desktop Styles (850+px)
+=======================
+*/
+
+@media only screen and (min-width: 850px) and (max-width: 950px) {
+    p#text1 {
+        top: -60vw;
+        left: 13vw;
+        font-size: 3em;
+    }
+
+    p#text2 {
+        top: -60vw;
+        left: 43vw;
+        font-size: 3em;
+    }
+
+    p#text3 {
+        top: -25vw;
+        left: -16vw;
+        font-size: 3em;
+    }
+
+    p#text4 {
+        top: -25vw;
+        left: 10vw;
+        font-size: 3em;
+    }
+}
+
+/* 
+=======================
+Desktop Styles (950+px)
+=======================
+*/
+
+@media only screen and (min-width: 950px) {
+    p#text1 {
+        top: -60vw;
+        left: 13vw;
+        font-size: 4em;
+    }
+
+    p#text2 {
+        top: -60vw;
+        left: 39vw;
+        font-size: 4em;
+    }
+
+    p#text3 {
+        top: -25vw;
+        left: -14vw;
+        font-size: 4em;
+    }
+
+    p#text4 {
+        top: -25vw;
+        left: 5vw;
+        font-size: 4em;
     }
 }
