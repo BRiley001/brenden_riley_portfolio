@@ -8,14 +8,16 @@ Date: 11.16.18
 Filename: styles1.css
  */
 
+/* The open sans font is imported from google fonts */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
-
+/* The name at the top is larger and in the center */
 header>h1 {
     text-align: center;
     font-size: 2.7em;
 }
 
+/* The entire page has a background that doesn't move with the page */
 html {
     background-image: url(background.jpeg);
     height: 100%;
@@ -24,6 +26,7 @@ html {
     background-attachment: fixed;
 }
 
+/* the body takes up most of the page, scales, and is centered with a slightly transparent white background */
 body {
     width: 90%;
     min-width: 300px;
@@ -33,10 +36,12 @@ body {
     background-color: rgba(227, 228, 228, 0.9);
 }
 
+/* all images are displayed as blocks */
 img {
     display: block;
 }
 
+/* the various images need to scale with the page, and be set in different positions */
 img#profpic {
     display: flex;
     flex: 1 1 480px;
@@ -71,6 +76,7 @@ img#mail {
     height: 33.5vw;
 }
 
+/* The images, when hovered over slowly filter to a sepia filter, to show that they are selected if people wouldn't otherwise know they are links */
 img#profpic:hover,
 img#profpic:active {
     filter: sepia(.8);
@@ -95,23 +101,13 @@ img#mail:active {
     transition: 2s ease;
 }
 
-li#navpic1 {
+/* all list items with an id that has navpic at the start take up half their width */
+li[id^=navpic] {
     width: 50%;
 }
 
-li#navpic2 {
-    width: 50%;
-}
-
-li#navpic3 {
-    width: 50%;
-}
-
-li#navpic4 {
-    width: 50%;
-}
-
-p#text1 {
+/* all paragraphs with an id that starts with text have a left float, a relative position, are white, have a large font size, and have a text shadow to make the text stand out*/
+p[id^=text] {
     float: left;
     position: relative;
     color: white;
@@ -119,35 +115,13 @@ p#text1 {
     text-shadow: 5px 2px 25px black;
 }
 
-p#text2 {
-    float: left;
-    position: relative;
-    color: white;
-    font-size: 3em;
-    text-shadow: 5px 2px 25px black;
-}
-
-p#text3 {
-    float: left;
-    position: relative;
-    color: white;
-    font-size: 3em;
-    text-shadow: 5px 2px 25px black;
-}
-
-p#text4 {
-    float: left;
-    position: relative;
-    color: white;
-    font-size: 3em;
-    text-shadow: 5px 2px 25px black;
-}
-
+/* the unordered lists within the images are offset to the left and right */
 ul#picnav {
     padding-left: 20px;
     padding-right: 20px;
 }
 
+/* Container collapse prevention, that includes a white background */
 ul#picnav:after {
     content: "";
     display: table;
@@ -155,50 +129,16 @@ ul#picnav:after {
     background: white;
 }
 
+/* The list items are inline, with a width of 90%, offset from the top and bottom while centered, with no list style */
 li {
     display: inline;
-    width: 90%;
     margin: 20px auto;
     list-style: none;
 }
 
+/* The article has the open sans font  */
 article {
     font-family: 'Open Sans', sans-serif;
-}
-
-/* 
-====================
-Mobile&Tablet Styles
-====================
-*/
-@media only screen and (max-width: 768px) {
-    nav#horizontal ul a {
-        display: flex;
-        flex: 1 1 180px;
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 42%;
-    }
-
-    a#navicon img {
-        width: 50%;
-    }
-
-    a#navicon {
-        display: block;
-        width: 10%;
-    }
-
-    nav.horizontal ul {
-        display: none;
-    }
-
-    a#navicon:hover+ul,
-    nav.horizontal ul:hover {
-        display: block;
-    }
-
-
 }
 
 /* 
@@ -206,6 +146,7 @@ Mobile&Tablet Styles
 Mobile styles (<480px)
 =======================
 */
+/* whenever the width is below 480 pixels, the text has a position to help it scale, though it doesnt do it great */
 @media only screen and (max-width: 480px) {
 
     p#text1 {
@@ -238,6 +179,7 @@ Mobile styles (<480px)
 Tablet Styles 1 (480px-550px)
 ============================
 */
+/* whenever the width is below 550 but above 480, another position is set */
 @media only screen and (min-width: 480px) and (max-width: 550px) {
     p#text1 {
         top: -60vw;
@@ -269,7 +211,7 @@ Tablet Styles 1 (480px-550px)
 Tablet Styles 2 (550px-768px)
 ============================
 */
-
+/* whenever the width is below 650 and above 550, a position is set */
 @media only screen and (min-width: 550px) and (max-width: 650px) {
     p#text1 {
         top: -60vw;
@@ -301,7 +243,8 @@ Tablet Styles 2 (550px-768px)
 Tablet Styles 3 (550px-768px)
 ============================
 */
-@media only screen and (min-width: 650px) and (max-width: 750px) {
+/* whenever the width is less than 768, and more than 650, a position is set */
+@media only screen and (min-width: 650px) and (max-width: 768px) {
     p#text1 {
         top: -60vw;
         left: 15vw;
@@ -332,6 +275,7 @@ Tablet Styles 3 (550px-768px)
 Desktop Styles (769+px)
 =======================
 */
+/* whenever the width is between 768 and 850, a position is set */
 @media only screen and (min-width: 768px) and (max-width: 850px) {
     nav#horizontal ul a {
         width: 19.4%;
@@ -369,10 +313,10 @@ Desktop Styles (769+px)
 
 /* 
 =======================
-Desktop Styles (850+px)
+Desktop Styles 2 (850+px)
 =======================
 */
-
+/* whenever the width is less than 950, and more than 850, a position is set */
 @media only screen and (min-width: 850px) and (max-width: 950px) {
     p#text1 {
         top: -60vw;
@@ -401,10 +345,10 @@ Desktop Styles (850+px)
 
 /* 
 =======================
-Desktop Styles (950+px)
+Desktop Styles 3 (950+px)
 =======================
 */
-
+/* whenever the width is above 950, a position is set */
 @media only screen and (min-width: 950px) {
     p#text1 {
         top: -60vw;

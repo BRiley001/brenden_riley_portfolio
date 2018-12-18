@@ -7,6 +7,9 @@
     filename: styles4.css
 */
 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+/* the entire page has a background that does not move */
 html {
     background-image: url(background.jpeg);
     height: 100%;
@@ -15,6 +18,7 @@ html {
     background-attachment: fixed;
 }
 
+/* the body is centered, with limits to how much it can scale , centered while taking up 90% of the page */
 body {
     width: 90%;
     min-width: 300px;
@@ -22,14 +26,16 @@ body {
     margin-left: auto;
     margin-right: auto;
     background-color: rgba(227, 228, 228, 0.95);
+
 }
 
+/* the name at the top of the page is larger and centered */
 header>h1 {
     text-align: center;
     font-size: 2.7em;
-    text-shadow: rgba(100, 100, 100, 0.7) 5px 0px rgba(40, 40, 40, 0.7) 10px 5px 25px;
 }
 
+/* the top navigation is centered, with centered text */
 nav#horizontal {
     width: 95%;
     margin-left: auto;
@@ -37,6 +43,7 @@ nav#horizontal {
     text-align: center;
 }
 
+/* the links within the nav scale have a gradiet background, with small decorative changes */
 nav#horizontal ul a {
     display: inline-block;
     text-align: center;
@@ -47,38 +54,46 @@ nav#horizontal ul a {
     background: linear-gradient(345deg, rgba(43, 45, 148, 0.74), rgba(67, 67, 100, 0.726) 80%);
 }
 
+/* the hypertext within the navigation changes over time to look better */
 nav#horizontal ul a:hover,
 nav#horizontal ul a:active {
     background-color: rgb(80, 80, 158);
     transition: .5s ease;
 }
 
+/* The grid that some elements of the education page are made of is centered and underliens */
 section#edugrid h2 {
     text-align: center;
     text-decoration: underline;
 }
 
+/* any onordered lists within the .edusec class has no list style, is centered, but stays to the left */
 .edusec>ul {
     list-style: none;
     text-align: center;
     padding-left: 0px;
 }
 
+/* all h1s are centered */
 h1 {
     text-align: center;
 }
 
+/* all paragraphs are centered */
 p {
     text-align: center;
 }
 
+/* the unordered lists have no list style, and will stay to the left, with th font being open sans */
 ul {
     list-style: none;
     padding-left: 0px;
     margin-top: 0px;
     margin-bottom: 0px;
+    font-family: 'Open Sans', sans-serif;
 }
 
+/* all images are displayed are blocks */
 img {
     display: block;
 }
@@ -88,13 +103,13 @@ img {
 Mobile Styles (0-480 px)
 ========================
 */
+/* when within the range of mobile widths, the education section is centered and displayed as a block */
 @media only screen and (max-width: 480px) {
     .edusec {
         margin-left: auto;
         margin-right: auto;
         display: block;
     }
-
 }
 
 /* 
@@ -102,6 +117,7 @@ Mobile Styles (0-480 px)
 Mobile&Tablet Styles
 ====================
 */
+/* While within the range of tablet and mobile sizes, the navigation shrinks to the nav image, which when hovered over brings up the rest of the navigation */
 @media only screen and (max-width: 768px) {
     nav#horizontal ul a {
         display: flex;
@@ -173,6 +189,7 @@ Tablet&Desktop Styles (481+ pixels)
 Desktop Styles (769+px)
 =======================
 */
+/* While within the desktop range, the whole navigation appears without the nav image */
 @media only screen and (min-width: 768px) {
     .edusec {
         border-radius: 145px;

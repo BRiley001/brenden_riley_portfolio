@@ -10,11 +10,13 @@ Filename: styles2.css
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
+/* the name at the top of the page is larger and centered */
 header>h1 {
     text-align: center;
     font-size: 2.7em;
 }
 
+/* the entire page has a background that does not move */
 html {
     background-image: url(background.jpeg);
     height: 100%;
@@ -23,6 +25,7 @@ html {
     background-attachment: fixed;
 }
 
+/* the body is centered, with limits to how much it can scale , centered while taking up 90% of the page */
 body {
     width: 90%;
     min-width: 300px;
@@ -30,8 +33,10 @@ body {
     margin-left: auto;
     margin-right: auto;
     background-color: rgba(227, 228, 228, 0.9);
+    font-family: 'Open Sans', sans-serif;
 }
 
+/* the top navigation is centered, with centered text */
 nav#horizontal {
     width: 95%;
     margin-left: auto;
@@ -39,6 +44,7 @@ nav#horizontal {
     text-align: center;
 }
 
+/* the links within the nav scale have a gradiet background, with small decorative changes */
 nav#horizontal ul a {
     display: inline-block;
     text-align: center;
@@ -49,12 +55,14 @@ nav#horizontal ul a {
     background: linear-gradient(345deg, rgba(43, 45, 148, 0.74), rgba(67, 67, 100, 0.726) 80%);
 }
 
+/* the hypertext within the navigation changes over time to look better */
 nav#horizontal ul a:hover,
 nav#horizontal ul a:active {
     background-color: rgb(80, 80, 158);
     transition: .5s ease;
 }
 
+/* the unordered lists have no list style, and will stay to the left */
 ul {
     list-style: none;
     padding-left: 0px;
@@ -62,23 +70,26 @@ ul {
     margin-bottom: 0px;
 }
 
+/* the navigation image that appears when in mobile will be a block */
 img#nav {
     display: block;
 }
 
+/* the profile icon is centered and a block */
 img#profpic {
     margin-left: auto;
     margin-right: auto;
     display: block;
 }
 
+/* the article will take up 300px, is centered, and has a blue border around it, while being a slightly larger open sans font */
 article {
     width: 300px;
     margin: 25px auto;
     padding: 5px;
     border: 5px inset rgb(66, 66, 151);
     font-family: 'Open Sans', sans-serif;
-
+    font-size: 1.2em;
 }
 
 /* 
@@ -86,6 +97,7 @@ article {
 Mobile&Tablet Styles
 ====================
 */
+/* While within the range of tablet and mobile sizes, the navigation shrinks to the nav image, which when hovered over brings up the rest of the navigation */
 @media only screen and (max-width: 768px) {
     nav#horizontal ul a {
         display: flex;
@@ -119,6 +131,7 @@ Mobile&Tablet Styles
 Desktop Styles (769+px)
 =======================
 */
+/* While within the desktop range, the whole navigation appears without the nav image */
 @media only screen and (min-width: 768px) {
     nav#horizontal ul a {
         width: 19.4%;

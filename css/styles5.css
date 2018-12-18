@@ -10,12 +10,13 @@ Filename: styles5.css
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
-
+/* the name at the top of the page is larger and centered */
 header>h1 {
     text-align: center;
     font-size: 2.7em;
 }
 
+/* the entire page has a background that does not move */
 html {
     background-image: url(background.jpeg);
     height: 100%;
@@ -24,6 +25,7 @@ html {
     background-attachment: fixed;
 }
 
+/* the body is centered, with limits to how much it can scale , centered while taking up 90% of the page */
 body {
     width: 90%;
     min-width: 300px;
@@ -34,6 +36,7 @@ body {
     background-color: rgba(227, 228, 228, 0.9);
 }
 
+/* the top navigation is centered, with centered text */
 nav#horizontal {
     width: 95%;
     margin-left: auto;
@@ -41,6 +44,7 @@ nav#horizontal {
     text-align: center;
 }
 
+/* the links within the nav scale have a gradiet background, with small decorative changes */
 nav#horizontal ul a {
     display: inline-block;
     text-align: center;
@@ -51,31 +55,32 @@ nav#horizontal ul a {
     background: linear-gradient(345deg, rgba(43, 45, 148, 0.74), rgba(67, 67, 100, 0.726) 80%);
 }
 
+/* the hypertext within the navigation changes over time to look better */
 nav#horizontal ul a:hover,
 nav#horizontal ul a:active {
     background-color: rgb(80, 80, 158);
     transition: .5s ease;
 }
 
+/* h2 tags are centered */
 h2 {
     text-align: center;
 }
 
-ul {
-    list-style: none;
-}
-
+/* the h1 tags are centere, with no text decoration and a large font size */
 h1 {
     text-align: center;
     text-decoration: none;
     font-size: 2.5em;
 }
 
+/* the list items are centered and slightly larger */
 li {
     text-align: center;
     font-size: 1.4em;
 }
 
+/* unordered lists have no list style , stay to the left, have no top or bottom margin, and are the open sans font */
 ul {
     list-style: none;
     padding-left: 0px;
@@ -84,6 +89,7 @@ ul {
     font-family: 'Open Sans', sans-serif;
 }
 
+/* all images are displayed as fonts */
 img {
     display: block;
 }
@@ -93,6 +99,7 @@ img {
 Mobile&Tablet Styles
 ====================
 */
+/* While within the range of tablet and mobile sizes, the navigation shrinks to the nav image, which when hovered over brings up the rest of the navigation */
 @media only screen and (max-width: 768px) {
     nav#horizontal ul a {
         display: flex;
@@ -126,6 +133,7 @@ Mobile&Tablet Styles
 Desktop Styles (769+px)
 =======================
 */
+/* While within the desktop range, the whole navigation appears without the nav image */
 @media only screen and (min-width: 768px) {
     nav#horizontal ul a {
         width: 19.4%;
