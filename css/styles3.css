@@ -186,6 +186,10 @@ Mobile&Tablet Styles
     nav.horizontal ul:hover {
         display: block;
     }
+
+    section {
+        font-size: .55em;
+    }
 }
 
 /* 
